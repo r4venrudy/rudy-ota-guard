@@ -59,6 +59,8 @@ ota-guard rotate-root --manifest examples/rotation.json --root examples/root.jso
 
 Commands read their input files and write deterministic JSON to stdout. They do not persist state, write files, generate keys, or use the network. Redirect stdout only to a new output path. **Never redirect over an input or trusted state file.**
 
+The redirection examples above use a POSIX shell. In Windows PowerShell 5, use `| Set-Content -Encoding ascii -LiteralPath examples/staged-state.json` instead of `> examples/staged-state.json` (and likewise for the other output files). CLI JSON escapes non-ASCII characters, so ASCII output is valid UTF-8. PowerShell's legacy UTF-16 redirection would make the resulting file unreadable to the strict UTF-8 parser.
+
 ## What it checks
 
 - Strict JSON input: duplicate keys, unknown fields, unsupported numeric values, malformed base64, and oversized files fail closed.

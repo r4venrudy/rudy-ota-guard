@@ -59,7 +59,7 @@ def main():
                  "manifest.json": sign(release, ["release-a", "release-b"]),
                  "rotation.json": sign(replacement, ["release-a", "release-b", "release-c"])}
     for name, document in documents.items():
-        (out / name).write_text(json.dumps(document, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        (out / name).write_text(json.dumps(document, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
     (out / "payload.bin").write_bytes(payload)
     print("Synthetic examples regenerated. Fixed verification time: 1900000000. Demo keys are public and unsafe for real releases.")
 
