@@ -1,0 +1,10 @@
+{
+  "active_release": "factory",
+  "active_slot": "A",
+  "architecture": "arm64",
+  "last_sequence": 0,
+  "pending": null,
+  "rollback_index": 1,
+  "schema": 1,
+  "target": "lab-controller"
+}

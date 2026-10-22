@@ -1,0 +1,24 @@
+{
+  "signatures": [
+    {
+      "keyid": "release-a",
+      "sig": "3e0vYR3k+P8XhAHJXPlQxmpWmr/0iefcS3lY1WdFZ2WmFI5kJTwFUnEE3QWn/jSwBcYcZNTMUe9rpCTzoSDGAQ=="
+    },
+    {
+      "keyid": "release-b",
+      "sig": "WJqMtZ/8D8cvDgE/UGmQ2n7QVvAoj8oMSlzOmRDeHvOpEffUoBNmMnAjZekq4Cqfqc0rCxuBM261MsAm2ZyvCQ=="
+    }
+  ],
+  "signed": {
+    "architecture": "arm64",
+    "expires_at": 1900003600,
+    "payload_sha256": "bdfdf8a3a44b8b6e92f7ecf243c12998466d287c4badf32b6b0dc9403f107443",
+    "payload_size": 378,
+    "release_id": "lab-v1.1.0",
+    "rollback_index": 2,
+    "schema": 1,
+    "sequence": 1,
+    "target": "lab-controller",
+    "type": "release"
+  }
+}

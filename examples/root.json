@@ -1,0 +1,31 @@
+{
+  "expires_at": 1900086400,
+  "keys": [
+    {
+      "expires_at": 1900086400,
+      "keyid": "release-a",
+      "not_before": 1899999000,
+      "public_key": "pAb8tEIV06w8Xz8BgVe0DXjn+CJ6ZrGa97c+bdHLA14=",
+      "revoked": false,
+      "roles": [
+        "root",
+        "release"
+      ]
+    },
+    {
+      "expires_at": 1900086400,
+      "keyid": "release-b",
+      "not_before": 1899999000,
+      "public_key": "3bruCyRXb9bNgIezG1rbSqUQh3acdd4HIwSTPx8e/EQ=",
+      "revoked": false,
+      "roles": [
+        "root",
+        "release"
+      ]
+    }
+  ],
+  "schema": 1,
+  "threshold": 2,
+  "type": "root",
+  "version": 1
+}

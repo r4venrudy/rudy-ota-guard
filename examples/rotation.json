@@ -1,0 +1,47 @@
+{
+  "signatures": [
+    {
+      "keyid": "release-a",
+      "sig": "MTk0lvVTVJgxHT1ajtkLfuxuvfPxxA5vIRiYM0nsSrVAWZoyMYBZKJgcAiExNDqPSfFkJIcYrNme8mejktpCDA=="
+    },
+    {
+      "keyid": "release-b",
+      "sig": "rU2M8hiK81Kepv81WjBaMkZgltedJFFYVPrUkaztkVroDJ2TzFPJP6r4vH3Q+Fbp4VI+QumIdh5Ff25BZfG2Dg=="
+    },
+    {
+      "keyid": "release-c",
+      "sig": "a5rw4NqF4xNyunL32YGE1ubUWM36iDZv1n8dUUAFKuC7UEnC2SalwRDgCITzdx2CJEtEamqWyjMqVIg+w7D6BA=="
+    }
+  ],
+  "signed": {
+    "expires_at": 1900086400,
+    "keys": [
+      {
+        "expires_at": 1900086400,
+        "keyid": "release-b",
+        "not_before": 1899999000,
+        "public_key": "3bruCyRXb9bNgIezG1rbSqUQh3acdd4HIwSTPx8e/EQ=",
+        "revoked": false,
+        "roles": [
+          "root",
+          "release"
+        ]
+      },
+      {
+        "expires_at": 1900086400,
+        "keyid": "release-c",
+        "not_before": 1899999000,
+        "public_key": "0d9HYD73mVPQW+0PSmUIWK1YScykFBko5VndyQvjaWE=",
+        "revoked": false,
+        "roles": [
+          "root",
+          "release"
+        ]
+      }
+    ],
+    "schema": 1,
+    "threshold": 2,
+    "type": "root",
+    "version": 2
+  }
+}

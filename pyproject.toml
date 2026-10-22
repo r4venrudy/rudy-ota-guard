@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rudy-ota-guard"
+version = "0.1.0"
+description = "Offline signed-release trust verification and A/B update transaction simulator"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Burak Selim Sünger"}]
+dependencies = ["cryptography==50.0.2"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Topic :: Software Development :: Testing",
+]
+
+[project.urls]
+Repository = "https://github.com/r4venrudy/rudy-ota-guard"
+Issues = "https://github.com/r4venrudy/rudy-ota-guard/issues"
+
+[project.scripts]
+ota-guard = "otaguard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
